@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /*10px*/
+}
+
+.product-item {
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+.product-item__img {
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.product-item__link {
+  text-decoration: none;
+}
+.product-item__price-old {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: red;
+  margin: 2px;
+}
+.product-item__price {
+  align-items: baseline; /* so các item cho bằng đích*/
+  display: flex;
+}
+.home-product-item__price-current {
+  font-size: 1.6rem;
+  color: black;
+}
+.product-item__name {
+  font-size: 1.6rem;
+  height: 3.6rem;
+  color: black;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.product-item__sale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 216, 64, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.product-item__sale::after {
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  border-style: solid;
+  content: "";
+  border-width: 0 22px 4px;
+  border-color: transparent rgba(255, 216, 64, 0.8) transparent rgba(255, 216, 64, 0.8);
+}
+.sale_label {
+  color: floralwhite;
+  text-transform: uppercase;
+}
+.sale__percent {
+  color: red;
+}
+.home-product-item__hot {
+  font-size: 1.3rem;
+  background-color: rgb(226, 64, 64);
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: -3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.home-product-item__check {
+  color: greenyellow;
+}
+.home-product-item__label {
+  color: white;
+}
+
+/* bài 2 */
+.top-bar {
+  background-color: #bc000b;
+  padding: 10px 0px;
+}
+.top-bar-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.top-bar-item__link {
+  text-decoration: none;
+  color: white;
+}
+.top-bar-item {
+  margin-left: 15px;
+  font-size: 1.6rem;
+}
+.top-bar-item:hover {
+  filter: brightness(0.9);
+}
+.top-bar-right {
+  text-align: right;
+}
+.top-bar-item:last-child {
+  margin-left: auto;
+  display: flex;
+}
+i {
+  margin: 0px 5px;
+}
+.top-nav {
+  height: 60px;
+  background-color: #e5101d;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+.nav-toggle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  height: 36px;
+  line-height: 3.6rem;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.input-group {
+  display: flex;
+  flex: 1;
+  height: 31;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+  border: none;
+}
+.input-group-append {
+  height: 31;
+}
+.input-group-append button {
+  height: 100%;
+}
+.btn.orange {
+  background-color: #f5a623;
+  color: #fff;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.btn.orange span {
+  font-size: 1.7rem;
+}
+.btn.orange i {
+  font-size: 1.8rem;
+}
+.center {
+  align-items: center;
+}
+.headerCart_3wHw {
+  padding: 10px;
+}
+.thumbs {
+  display: flex;
+}
+.recentViewed {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-right: 30px;
+  color: white;
+}
+.recentViewed span {
+  width: 70px;
+}
+.image-square img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.categories {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+
+  padding: 0;
+  list-style: none;
+}
+.category-item {
+  padding: 10px 10px;
+  font-size: 1.36rem;
+}
+.category-item__link {
+  text-decoration: none;
+  color: black;
+}
+.banner-img {
+  height: 325px;
+}
+.shortcut-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+.shortcut-item {
+  margin-left: 60px;
+}
+.shortcut-item__link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-align: center;
+}

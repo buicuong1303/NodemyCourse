@@ -1,0 +1,41 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+.form-login {
+  width: 300px;
+  margin: 0 auto;
+}
+.input {
+  padding: 5px 0;
+}
+.title {
+  text-align: center;
+}
+label {
+  margin: 5px 0px;
+}
+a {
+  text-decoration: none;
+  color: #096aad;
+}
+.login,
+.login-with-facebook {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #096aad;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.login-with-facebook {
+  background-color: #123b58;
+}
+.forgot-pwd,
+.sign-up {
+  text-align: right;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      menu {
+        width: 250px;
+        padding: 0;
+      }
+
+      .title {
+        margin: 0;
+        padding: 5px;
+        margin-top: 2px;
+      }
+      .menu__item:hover .menu__sub {
+        display: block;
+      }
+      .menu__item:hover,
+      .menu__sub-item:hover {
+        background-color: red;
+      }
+      .menu__item {
+        background-color: #69d05c;
+        position: relative;
+      }
+      .menu__sub {
+        width: 100%;
+        left: 100%;
+        top: 0;
+        position: absolute;
+        display: none;
+      }
+      .menu__sub-item {
+        padding: 5px;
+        margin-bottom: 2px;
+        background-color: #458b3c;
+      }
+    </style>
+  </head>
+  <body>
+    <menu>
+      <ul class="menu__nav">
+        <li class="menu__item">
+          <h4 class="title">Tin tức trong ngày</h4>
+          <ul class="menu__sub">
+            <li class="menu__sub-item">Hà Nội</li>
+            <li class="menu__sub-item">Đà Nẵng</li>
+            <li class="menu__sub-item">TP HCM</li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <h4 class="title">Bóng đá</h4>
+          <ul class="menu__sub">
+            <li class="menu__sub-item">Trong nước</li>
+            <li class="menu__sub-item">Ngoài nước</li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <h4 class="title">Thời trang</h4>
+          <ul class="menu__sub">
+            <li class="menu__sub-item">Trẻ em</li>
+            <li class="menu__sub-item">Tuổi teen</li>
+            <li class="menu__sub-item">Người lớn</li>
+          </ul>
+        </li>
+      </ul>
+    </menu>
+  </body>
+</html>
