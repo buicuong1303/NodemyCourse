@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 
     <title>Document</title>
     <style>
       ul {
         padding: 0;
         list-style: none;
+      }
+      ul > li::before {
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
       }
       menu {
         width: 250px;
@@ -49,7 +55,7 @@
     <menu>
       <ul class="menu__nav">
         <li class="menu__item">
-          <h4 class="title">Tin tức trong ngày</h4>
+          Tin tức trong ngày
           <ul class="menu__sub">
             <li class="menu__sub-item">Hà Nội</li>
             <li class="menu__sub-item">Đà Nẵng</li>
@@ -57,14 +63,14 @@
           </ul>
         </li>
         <li class="menu__item">
-          <h4 class="title">Bóng đá</h4>
+          Bóng đá
           <ul class="menu__sub">
             <li class="menu__sub-item">Trong nước</li>
             <li class="menu__sub-item">Ngoài nước</li>
           </ul>
         </li>
         <li class="menu__item">
-          <h4 class="title">Thời trang</h4>
+          Thời trang
           <ul class="menu__sub">
             <li class="menu__sub-item">Trẻ em</li>
             <li class="menu__sub-item">Tuổi teen</li>
