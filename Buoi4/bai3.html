@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+      }
+      div {
+        border: 1px solid black;
+      }
+      header {
+        background-color: aqua;
+      }
+      .content-header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .left-pane {
+        width: 25%;
+        background-color: blueviolet;
+        height: 400px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right-pane {
+        width: 25%;
+        background-color: blueviolet;
+        height: 400px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrapper-body {
+        width: 50%;
+        background-color: blueviolet;
+        height: 400px;
+        float: left;
+      }
+      .clearfix::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+      .pre-body {
+        height: 20%;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .body {
+        height: 60%;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .post-body {
+        height: 20%;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer {
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-footer {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="content-header">Header</div>
+    </header>
+    <div class="content clearfix">
+      <div class="left-pane">Left pane</div>
+      <div class="wrapper-body">
+        <div class="pre-body">pre-body</div>
+        <div class="body">body</div>
+        <div class="post-body">
+          post-body
+        </div>
+      </div>
+      <div class="right-pane">
+        right-pane
+      </div>
+    </div>
+    <footer>
+      <div class="content-footer">footer</div>
+    </footer>
+  </body>
+</html>
