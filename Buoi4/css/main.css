@@ -64,7 +64,7 @@ html {
   position: absolute;
   bottom: -4px;
   border-style: solid;
-  content: '';
+  content: "";
   border-width: 0 22px 4px;
   border-color: transparent rgba(255, 216, 64, 0.8) transparent rgba(255, 216, 64, 0.8);
 }
@@ -190,17 +190,21 @@ i {
   width: 70px;
 }
 .image-square img {
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   margin-left: 5px;
   border-radius: 3px;
   cursor: pointer;
 }
 .categories {
+  min-width: 200px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
   height: 325px;
   padding: 0;
   list-style: none;
+}
+.wrapper {
+  display: flex;
 }
 .category-item {
   padding: 10px 10px;
@@ -212,10 +216,13 @@ i {
 }
 .banner-img {
   height: 325px;
-  width: 100%;
+  max-width: 1045px;
 }
 .banner {
   padding-left: 100px;
+}
+.no-wrap {
+  flex-wrap: nowrap;
 }
 .shortcut-list {
   display: flex;
@@ -240,5 +247,13 @@ body {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
     max-width: 680px;
+  }
+  .banner {
+    padding-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    padding-left: 0;
   }
 }
