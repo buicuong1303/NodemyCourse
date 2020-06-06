@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Document</title>
   </head>
   <body>
+   
     <header class="header">
-      <section class="top-bar">
+      <div class="mobile-banner d-block d-sm-none">
+        <a href="https://sendo.onelink.me/0Sac/e972534d?af_dp=https://www.sendo.vn/">
+          <img style="width: 100%" src="https://media3.scdn.vn/img4/2020/06_03/ZSnlTQSaV5iMPjaudyWi.png" alt="Smart Banner_Always on">
+        </a>
+      </div>
+      <section class="top-bar d-none d-sm-block">
         <div class="container">
           <div class="row center no-gutters">
-            <div class="col-lg-8 col-sm-9  col-xs-9">
+            <div class="col-12">
               <ul class="top-bar-list">
                 <li class="top-bar-item">
                   <a class="top-bar-item__link" href="">
@@ -33,26 +43,25 @@
                     Kiểm tra đơn hàng
                   </a>
                 </li>
+                <li class="top-bar-item">
+                  <a class="top-bar-item__link" href="">
+                    Đăng nhập
+                  </a>
+                </li>
               
               </ul>
-            </div>
-            <div class="col-lg-2 offset-lg-2 col-sm-3 col-xs-3  ">
-              <a class="d-none d-lg-block top-bar-item top-bar-item__link" href="">
-                <i class="far fa-user"></i>
-                Đăng nhập
-              </a>
             </div>
           </div>
         </div>
       </section>
       <nav class="top-nav">
         <div class="container">
-          <div class="row center">
+          <div class="d-flex align-items-center" style="padding:0px 15px">
             <a aria-label="logo_hJBT" href="/" class="logo_hJBT  d-lg-none d-sm-block d-xs-block"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8cG9seWdvbiBpZD0icGFnZS0xLWNvcHktNEAxeC1hIiBwb2ludHM9IjAgLjIwOCAzMy43OTMgLjIwOCAzMy43OTMgMzQgMCAzNCIvPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPG1hc2sgaWQ9InBhZ2UtMS1jb3B5LTRAMXgtYiIgZmlsbD0iI2ZmZiI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhZ2UtMS1jb3B5LTRAMXgtYSIvPgogICAgPC9tYXNrPgogICAgPHBhdGggZmlsbD0iI0ZFRkVGRSIgZD0iTTMxLjI5MTY3MjIsMC4yMDc0IEwyLjQ5NDcyMzcxLDAuMjA3NCBDMS4xMTc4OTg5NywwLjIwNzQgMC4wMDAxMDUxNTQ2MzksMS4yOTgyMDQxMiAwLjAwMDEwNTE1NDYzOSwyLjY0MzEzMTk2IEwwLjAwMDEwNTE1NDYzOSwzMS41NjE3MDkzIEMwLjAwMDEwNTE1NDYzOSwzMi45MDczMzgxIDEuMTE3ODk4OTcsMzMuOTk5ODk0OCAyLjQ5NDcyMzcxLDMzLjk5OTg5NDggTDMxLjI5MTY3MjIsMzMuOTk5ODk0OCBDMzIuNjY5ODk5LDMzLjk5OTg5NDggMzMuNzkzMzAxLDMyLjkwNzMzODEgMzMuNzkzMzAxLDMxLjU2MTcwOTMgTDMzLjc5MzMwMSwyLjY0MzEzMTk2IEMzMy43OTMzMDEsMS4yOTgyMDQxMiAzMi42Njk4OTksMC4yMDc0IDMxLjI5MTY3MjIsMC4yMDc0IiBtYXNrPSJ1cmwoI3BhZ2UtMS1jb3B5LTRAMXgtYikiLz4KICAgIDxwYXRoIGZpbGw9IiNFRDI1MjQiIGQ9Ik0xMiAyNi45OTkzMzE5QzEyIDI4LjEwNDA1ODggMTEuMTA0NTAyNSAyOSAxMC4wMDA1MDEyIDI5IDguODk1NDk3NDUgMjkgOCAyOC4xMDQwNTg4IDggMjYuOTk5MzMxOSA4IDI1Ljg5NTYwNzEgOC44OTU0OTc0NSAyNSAxMC4wMDA1MDEyIDI1IDExLjEwNDUwMjUgMjUgMTIgMjUuODk1NjA3MSAxMiAyNi45OTkzMzE5TTIyIDI2Ljk5OTMzMTlDMjIgMjguMTA0MDU4OCAyMS4xMDQ4MDE3IDI5IDE5Ljk5OTE2NDkgMjkgMTguODk1ODY2NCAyOSAxOCAyOC4xMDQwNTg4IDE4IDI2Ljk5OTMzMTkgMTggMjUuODk1NjA3MSAxOC44OTU4NjY0IDI1IDE5Ljk5OTE2NDkgMjUgMjEuMTA0ODAxNyAyNSAyMiAyNS44OTU2MDcxIDIyIDI2Ljk5OTMzMTlNMjMuNTM5MTI0MiAxMi44NjM4OTQ1QzIyLjA2NTU1MjMgMTIuMDY1NDE5MyAyMS4wMDc2Mzk1IDExLjQ2Njk5MDQgMjEuMDA3NjM5NSAxMC40OTQxMTU5IDIxLjAwNzYzOTUgOS42MzA2Njg0MSAyMS44NDk5MzM1IDguMDQ0MzE4NzcgMjMuNTgxMjU2NiA4LjA0MzI5MjkgMjQuMjcwNTk5MyA4LjA0MjYwODk4IDI1LjE2NzA2MzUgOC4xNTQwODc3NCAyNS4zMTg5NTI2IDguMTk5OTEwM0wyNi42MDczNTQzIDUuMzgzODc0NjhDMjQuNDE3MTc3NiA0Ljg1NTg4OTM3IDIzLjQyOTcyMTUgNS4wMjYxODUxNSAyMy40Mjk3MjE1IDUuMDI2MTg1MTUgMjAuMDMyNTc1NCA1LjE0ODk0ODU4IDE3LjA4MTg5MTEgNy45NjkwODc3MSAxNy4wODE4OTExIDExLjA5MzIyODcgMTcuMDgxODkxMSAxMy4yODc5MjQxIDE4LjgzNzY0MzggMTQuNTg0OTc2MSAyMC42OTc4NDI1IDE1LjU1Nzg1MDYgMjIuMjk5MjI3OCAxNi4zNTU5ODM4IDIzLjA0ODA1MTYgMTYuOTgwNDAxNyAyMy4wNDgwNTE2IDE3LjkyODMxMzEgMjMuMDQ4MDUxNiAxOS4xMTczMDU5IDIxLjk4MDU3OTQgMTkuNzYwODczNSAyMC43MTQxMjkgMTkuODc2NDU1OEwyMC42MTI1MTU1IDE5Ljg4NTY4ODcgMTAuNDIxMDc3MSAxOS45NTc4NDIxIDExLjAxMzA1NSAxOC4wNDMyMTE1IDE2LjcyNzEyOTIgMTguMDQzMjExNSAxNy43Njk4MTc2IDE1LjUwNDE2MyAxMC4xODA2NzQ1IDE1LjUwNDE2M0M5LjE5MTA5NDIgMTUuNTA0MTYzIDguNzgxNDUzOTYgMTUuODMwMzkyMiA4LjYwNTEzNTE3IDE2LjE1NTU5NTZMNy4wMzQ5MDY1OSAyMS41NDY5Mjc0QzYuODY1MzE0ODMgMjIuMTMwMzEwMiA3LjMzMDE4NzQ2IDIyLjc1MzAxODIgOC4wNzEyMjIwNSAyMi45NTI3MjI1IDguMTMzNTM1NTEgMjIuOTY5MTM2NiA4LjE5MzcyNDY2IDIyLjk3NDYwNzkgOC4yNTUzMzAwMiAyMi45ODQ1MjQ3TDguMjUxNzg5NDggMjIuOTk4MjAzMSA4LjQwNDc0MDcyIDIyLjk5NTgwOTRDOC40ODY4ODEyIDIzLjAwMjMwNjYgOC41NjkzNzU3MyAyMy4wMDA1OTY4IDguNjQ3OTc1NjggMjIuOTk1MTI1NUwyMC42MDkzMjkgMjIuOTY5MTM2NiAyMC43MTQxMjkgMjIuOTYzMzIzM0MyNC4yMjE3Mzk5IDIyLjcxMzY5MjkgMjcgMjAuNzg3Nzc3NiAyNyAxNy4zMDM4OTUzIDI3IDE1LjMwODIyMDIgMjUuNjU3MDc0IDEzLjkzNjYyMTEgMjMuNTM5MTI0MiAxMi44NjM4OTQ1Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="SENDO.VN - Mua hàng online đảm bảo, giá rẻ từ các Shop uy tín"></a>
 
             <a aria-label="logo_hJBT" href="/" class="logo_hJBT">
               <img class="d-none d-lg-block" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzAgMzUiIHdpZHRoPSIxMzAiIGhlaWdodD0iMzUiPjxzd2l0Y2g+PGc+PHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAzLjIuOEw5OC42IDI1YTY0IDY0IDAgMCAwLTEuMSA5LjdIOTFsLjQtNC4zaC0uMWE5IDkgMCAwIDEtNy44IDQuNGMtNC4xIDAtNy40LTMuMi03LjQtOSAwLTguMyA2LTE1LjkgMTUtMTUuOSAxLjEgMCAyLjIuMiAzLjMuNkw5Ni4yLjlsNy0uMXpNOTMuMyAxNmE0IDQgMCAwIDAtMi44LS44Yy00LjIgMC03LjIgNC45LTcuMiA5LjUgMCAyLjkgMS4zIDQuNSAzLjMgNC41IDIuMSAwIDQuNS0yLjEgNS40LTYuN2wxLjMtNi41em0tODYgMTAuNmMyLjQgMS40IDUgMi4xIDcuOCAyLjEgMi43IDAgNS4yLTEuMyA1LjItMy45IDAtMS45LTEuNC0zLjEtNC40LTQuNi0zLjYtMS45LTYuOS00LjQtNi45LTguN0M5IDQuOSAxNC44LjggMjIgLjhjNCAwIDYuNC45IDcuOCAxLjdsLTIuMiA1LjljLTEuOS0xLTQtMS41LTYuMS0xLjUtMy4zIDAtNSAxLjctNSAzLjUgMCAxLjkgMiAzLjEgNC44IDQuNiA0IDIuMSA2LjYgNC44IDYuNiA4LjcgMCA3LjMtNi4xIDExLjEtMTMuNCAxMS4xLTQuNiAwLTcuOS0xLjItOS40LTIuM2wyLjItNS45em00MSA2LjNhMjAuNyAyMC43IDAgMCAxLTguOSAxLjljLTYuOCAwLTEwLjMtMy45LTEwLjMtMTBDMjkuMSAxNy41IDM0LjQgMTAgNDMgMTBjNC44IDAgOC4zIDIuNyA4LjMgNy4xIDAgNi4xLTUuOSA4LjMtMTUuNSA4LjEgMCAuOS4zIDEuNy43IDIuNC45IDEuMiAyLjUgMS45IDQuNiAxLjkgMi4zIDAgNC42LS41IDYuNy0xLjVsLjUgNC45ek00Mi4xIDE1Yy0zLjMgMC01LjEgMi43LTUuNiA0LjkgNS41LjEgOC4yLS43IDguMi0yLjkgMC0xLjItLjktMi0yLjYtMnptOC4yIDE5LjdsMy4xLTE2LjZjLjYtMyAxLjEtNi4yIDEuMy04LjNINjFsLS42IDQuNWguMWExMCAxMCAwIDAgMSA4LjQtNC41YzMuOSAwIDYuMSAyLjQgNi4xIDYuNSAwIDEuNC0uMiAyLjctLjQgNC4xbC0yLjcgMTQuM2gtN0w2Ny41IDIxYy4yLS45LjItMS44LjItMi43IDAtMS43LS42LTIuOC0yLjMtMi44LTIuMyAwLTUgMi45LTUuOSA4LjFsLTIuMSAxMS4xaC03LjF6bTc1LjEtMTVjMCA4LjctNS45IDE1LjEtMTQuMiAxNS4xLTYuMSAwLTEwLjEtNC0xMC4xLTkuOSAwLTguMyA1LjgtMTUuMSAxNC4yLTE1LjEgNi40LjEgMTAuMSA0LjUgMTAuMSA5LjltLTE3IDUuMWMwIDIuOCAxLjQgNC42IDMuOCA0LjYgMy45IDAgNi01LjYgNi05LjcgMC0yLjItLjktNC41LTMuOC00LjUtNCAwLTYuMSA1LjktNiA5LjYiLz48cGF0aCBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0tMS43LTZoMTQyLjZ2NDcuNkgtMS43Vi02eiIvPjwvZz48L3N3aXRjaD48L3N2Zz4=" alt="SENDO.VN - Mua hàng online đảm bảo, giá rẻ từ các Shop uy tín"></a>
-            <a href="" class="nav-toggle" >
+            <a href="" class="nav-toggle 	d-none d-sm-block" >
               <svg width="3.2rem" height="3.2rem" viewBox="0 0 24 24">
                 <path d="M3 19h18v-2H3v2zm0-6h8v-2H3v2zm0-8v2h18V5H3zm10 5l4 4 4-4z" fill="#FFF"></path>
               </svg>
@@ -78,9 +87,9 @@
       </nav>
     </header>
     <div class="banner">
-      <div class="container-fluid">
-        <div class ="wrapper" style="overflow: hidden;">
-            <ul class="categories">
+      <div class="container">
+        <div class ="d-flex" style="overflow: hidden;">
+            <ul class="categories d-none d-sm-block">
               <li class="category-item"><a href="" class="category-item__link">Thời trang nam</a></li>
               <li class="category-item"><a href="" class="category-item__link">Thời trang nam</a></li>
               <li class="category-item"><a href="" class="category-item__link">Thời trang nam</a></li>
@@ -91,77 +100,117 @@
               <li class="category-item"><a href="" class="category-item__link">Thời trang nam</a></li>
               <li class="category-item"><a href="" class="category-item__link">Thời trang nam</a></li>
             </ul>
-            <img class="banner-img" alt="Bay hè giá rẻ" src="//media3.scdn.vn/img4/2020/05_19/Azic6LceCzYVDgMBZWCr.jpg">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                </div>
+                <div class="carousel-item">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="swiper-lazy smoothy-img-large-12 visible_1MKu" alt="LÊN ĐỜI XẾ SANG" src="//media3.scdn.vn/img4/2020/06_04/vsTAcfXHm0qi1k7E1aLM.png">
+                </div>
+                <div class="carousel-item">
+                  <img class="swiper-lazy smoothy-img-large-1 visible_1MKu" alt="Ngày đẹp sale to - 6.6" src="//media3.scdn.vn/img4/2020/06_05/NPLxT1ChzmIofV46mQjo.png">
+                </div>
+            
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            
     
         </div>
       </div>
     </div>
     <div class="banner-footer">
-      <div class="container-fluid">
-        <ul class="shortcut-list">
-          <li class="shortcut-item">
+      <div class="container">
+        <div class="d-flex flex-wrap">
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
-          <li class="shortcut-item">
+          </div>
+          <div class="shortcut-item">
             <a href="" class="shortcut-item__link">
-              <img src="//media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 1x, https://media3.scdn.vn/img4/2020/05_18/HZ8ZE0pmya1S25YMVqWq.png 2x" alt="">
+              <img src="//media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png" class="icon_2Ap-" srcset="https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 1x, https://media3.scdn.vn/img4/2020/06_05/rVP3b8HzOzf2rKRqSkYH.png 2x" alt="">
               <p class="text_3zD4" style="color: rgb(0, 0, 0); padding-top: 3px;">Sale to<br>bất tận</p>
             </a>
-          </li>
+          </div>
           
-        </ul>
+        </div>
       </div>
     </div>
   </body>
+
 </html>
