@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label class="control-label" for="name">
+    Username
+  </label>
+  <input class="form-control" id="username" name="username" type="text" />
+</div>
+<script>
+  let input = document.getElementById('username');
+  input.addEventListener('keypress', function () {
+    clearTimeout(typing);
+    var typing = setTimeout(function () {
+      console.log(input.value);
+    }, 1000);
+  });
+</script>

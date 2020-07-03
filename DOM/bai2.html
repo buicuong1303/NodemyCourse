@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Inline CSS based on choices in "Settings" tab -->
+    <style>
+      .bootstrap-iso .formden_header h2,
+      .bootstrap-iso .formden_header p,
+      .bootstrap-iso form {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      .bootstrap-iso form button,
+      .bootstrap-iso form button:hover {
+        color: white !important;
+      }
+      .asteriskField {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+
+    <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+    <div class="bootstrap-iso">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <form method="POST" action="bai2.html">
+              <div class="form-group">
+                <label class="control-label" for="name">
+                  Username
+                </label>
+                <input class="form-control" id="username" name="username" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="password">
+                  Password
+                </label>
+                <input class="form-control" id="password" name="password" type="text" />
+              </div>
+              <div class="form-group">
+                <div>
+                  <button id="btn" class="btn btn-primary" name="submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var button = document.getElementById('btn').addEventListener('click', function () {
+        var username = document.getElementById('username').value;
+        var pwd = document.getElementById('password').value;
+        if (username === '') return alert('username is required');
+
+        if (pwd.length < 8) return alert('password must be larger 8 character');
+
+        return alert('OK');
+      });
+    </script>
+  </body>
+</html>
